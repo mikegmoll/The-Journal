@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  aid: 1
+  name: MyString
+  age: 1
+  email: MyString
+  weight: 1
+  height: 1
+  sport: MyString
+
+two:
+  aid: 1
+  name: MyString
+  age: 1
+  email: MyString
+  weight: 1
+  height: 1
+  sport: MyString
