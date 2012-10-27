@@ -1,0 +1,33 @@
+<h1>Listing mycompetitions</h1>
+
+<table>
+  <tr>
+    <th>Competition name</th>
+    <th>Sport</th>
+    <th>Date</th>
+    <th>My result</th>
+    <th>Time</th>
+    <th>Other details</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mycompetitions.each do |mycompetition| %>
+  <tr>
+    <td><%= mycompetition.competition_Name %></td>
+    <td><%= mycompetition.sport %></td>
+    <td><%= mycompetition.Date %></td>
+    <td><%= mycompetition.My_result %></td>
+    <td><%= mycompetition.time %></td>
+    <td><%= mycompetition.other_details %></td>
+    <td><%= link_to 'Show', mycompetition %></td>
+    <td><%= link_to 'Edit', edit_mycompetition_path(mycompetition) %></td>
+    <td><%= link_to 'Destroy', mycompetition, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mycompetition', new_mycompetition_path %>

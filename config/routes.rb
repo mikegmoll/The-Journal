@@ -1,4 +1,14 @@
 Triharder::Application.routes.draw do
+
+  resources :my_time_trials
+
+  resources :mycompetitions
+
+  resources :myworkouts
+
+  root :to => "homepage#index"
+  match "homepage" => "homepage#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

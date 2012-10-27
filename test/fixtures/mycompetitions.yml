@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  competition_Name: MyString
+  sport: MyString
+  Date: 2012-10-26
+  My_result: MyString
+  time: MyString
+  other_details: MyString
+
+two:
+  competition_Name: MyString
+  sport: MyString
+  Date: 2012-10-26
+  My_result: MyString
+  time: MyString
+  other_details: MyString

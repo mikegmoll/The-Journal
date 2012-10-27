@@ -1,0 +1,31 @@
+<h1>Listing my_time_trials</h1>
+
+<table>
+  <tr>
+    <th>Time trial type</th>
+    <th>Sport</th>
+    <th>Date</th>
+    <th>My time</th>
+    <th>Other details</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @my_time_trials.each do |my_time_trial| %>
+  <tr>
+    <td><%= my_time_trial.Time_Trial_Type %></td>
+    <td><%= my_time_trial.sport %></td>
+    <td><%= my_time_trial.Date %></td>
+    <td><%= my_time_trial.My_Time %></td>
+    <td><%= my_time_trial.Other_Details %></td>
+    <td><%= link_to 'Show', my_time_trial %></td>
+    <td><%= link_to 'Edit', edit_my_time_trial_path(my_time_trial) %></td>
+    <td><%= link_to 'Destroy', my_time_trial, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New My time trial', new_my_time_trial_path %>

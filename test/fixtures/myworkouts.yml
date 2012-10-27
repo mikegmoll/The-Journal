@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  workouttype: MyString
+  Date: 2012-10-26
+  details: MyString
+
+two:
+  workouttype: MyString
+  Date: 2012-10-26
+  details: MyString

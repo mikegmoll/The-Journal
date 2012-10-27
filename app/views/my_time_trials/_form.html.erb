@@ -1,0 +1,37 @@
+<%= form_for(@my_time_trial) do |f| %>
+  <% if @my_time_trial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@my_time_trial.errors.count, "error") %> prohibited this my_time_trial from being saved:</h2>
+
+      <ul>
+      <% @my_time_trial.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Time_Trial_Type %><br />
+    <%= f.text_field :Time_Trial_Type %>
+  </div>
+  <div class="field">
+    <%= f.label :sport %><br />
+    <%= f.text_field :sport %>
+  </div>
+  <div class="field">
+    <%= f.label :Date %><br />
+    <%= f.date_select :Date %>
+  </div>
+  <div class="field">
+    <%= f.label :My_Time %><br />
+    <%= f.text_field :My_Time %>
+  </div>
+  <div class="field">
+    <%= f.label :Other_Details %><br />
+    <%= f.text_field :Other_Details %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

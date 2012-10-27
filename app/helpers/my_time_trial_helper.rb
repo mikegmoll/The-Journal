@@ -1,0 +1,2 @@
+module MyTimeTrialHelper
+end

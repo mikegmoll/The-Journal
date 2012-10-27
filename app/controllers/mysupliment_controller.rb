@@ -1,0 +1,2 @@
+class MysuplimentController < ApplicationController
+end

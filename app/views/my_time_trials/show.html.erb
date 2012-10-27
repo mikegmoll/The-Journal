@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Time trial type:</b>
+  <%= @my_time_trial.Time_Trial_Type %>
+</p>
+
+<p>
+  <b>Sport:</b>
+  <%= @my_time_trial.sport %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @my_time_trial.Date %>
+</p>
+
+<p>
+  <b>My time:</b>
+  <%= @my_time_trial.My_Time %>
+</p>
+
+<p>
+  <b>Other details:</b>
+  <%= @my_time_trial.Other_Details %>
+</p>
+
+
+<%= link_to 'Edit', edit_my_time_trial_path(@my_time_trial) %> |
+<%= link_to 'Back', my_time_trials_path %>

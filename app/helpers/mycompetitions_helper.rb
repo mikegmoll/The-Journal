@@ -1,0 +1,2 @@
+module MycompetitionsHelper
+end

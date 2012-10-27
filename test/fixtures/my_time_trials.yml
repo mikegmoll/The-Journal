@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Time_Trial_Type: MyString
+  sport: MyString
+  Date: 2012-10-27
+  My_Time: MyString
+  Other_Details: MyString
+
+two:
+  Time_Trial_Type: MyString
+  sport: MyString
+  Date: 2012-10-27
+  My_Time: MyString
+  Other_Details: MyString
